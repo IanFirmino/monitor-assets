@@ -7,8 +7,7 @@ This project serves as the backend for the Ideal CTVM Code Challenge. It utilize
 ### Build with
 - JAVA
 - SpringBoot
-- JUnit
-
+- 
 ### Instalation
 
 1. Obtain a free API key from IEX Cloud.
