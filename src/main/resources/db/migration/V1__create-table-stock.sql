@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Stock (
+    id INT PRIMARY KEY,
+    stock VARCHAR(MAX),
+    price FLOAT
+);
