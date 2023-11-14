@@ -12,7 +12,7 @@ This project serves as the backend for the Ideal CTVM Code Challenge. It utilize
 ### Instalation
 
 1. Obtain a free API key from IEX Cloud.
-2. Clone the repository: git clone https://github.com/your_username_/Project-Name.git
+2. Clone the repository: https://github.com/IanFirmino/monitor-assets
 3. Download dependencies: mvn clean install
 4. Run the project: mvn spring-boot:run
 
