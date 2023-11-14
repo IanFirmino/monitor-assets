@@ -8,8 +8,6 @@ import lombok.Setter;
 public class StockResponseDTO {
 
     private String symbol;
-    private String companyName;
-    private Double iexOpen;
     private Double iexRealtimePrice;
 
 }

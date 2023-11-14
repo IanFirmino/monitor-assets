@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+
 @Entity(name = "Stock")
 @Table(name = "Stock")
 @Getter
@@ -13,7 +14,7 @@ public class Stock {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String Stock;
-    private Double price;
+    private String symbol;
+    private Double iexRealtimePrice;
 
 }

@@ -30,7 +30,9 @@ public class StockController {
 
     @GetMapping("/{symbol}")
     public ResponseEntity<StockResponseDTO> getStockQuote(@PathVariable String symbol) {
-        return ResponseEntity.status(HttpStatus.OK).body(iexCloudService.getStockQuote(symbol));
+        Stock stock = iexCloudService.getStockQuote(symbol);
+        StockResponseDTO stockResponse = stockMapper.stockToResponse(stock);
+        return ResponseEntity.status(HttpStatus.OK).body(stockResponse);
     }
 
     @GetMapping

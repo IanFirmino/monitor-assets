@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS Stock (
-    id INT PRIMARY KEY,
-    stock VARCHAR(MAX),
-    price FLOAT
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    symbol VARCHAR(MAX),
+    iex_realtime_price FLOAT
 );

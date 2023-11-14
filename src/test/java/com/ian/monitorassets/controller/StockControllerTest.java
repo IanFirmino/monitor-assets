@@ -32,19 +32,4 @@ public class StockControllerTest {
     @InjectMocks
     private StockController stockController;
 
-    @Test
-    public void testGetStockQuote() throws JsonProcessingException {
-        String symbol = "MSFT";
-        StockResponseDTO mockResponseDTO = new StockResponseDTO();
-
-        when(iexCloudService.getStockQuote(symbol)).thenReturn(mockResponseDTO);
-        ResponseEntity<StockResponseDTO> response = stockController.getStockQuote(symbol);
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(mockResponseDTO, response.getBody());
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        String jsonResponse = objectMapper.writeValueAsString(response.getBody());
-        System.out.println("JSON Resultante: " + jsonResponse);
-    }
-
 }

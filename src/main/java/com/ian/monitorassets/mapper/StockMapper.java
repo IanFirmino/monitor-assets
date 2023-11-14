@@ -13,14 +13,15 @@ public class StockMapper {
 
     public Stock requestToStock(StockRequestDTO stockRequestDTO){
         Stock stock = new Stock();
-        stock.setStock(stockRequestDTO.getStock());
-        stock.setPrice(stockRequestDTO.getPrice());
+        stock.setSymbol(stockRequestDTO.getSymbol());
+        stock.setIexRealtimePrice(stockRequestDTO.getIexRealtimePrice());
         return stock;
     }
 
     public StockResponseDTO stockToResponse(Stock stock){
         StockResponseDTO stockResponseDTO = new StockResponseDTO();
-        stockResponseDTO.setSymbol(stock.getStock());
+        stockResponseDTO.setSymbol(stock.getSymbol());
+        stockResponseDTO.setIexRealtimePrice(stock.getIexRealtimePrice());
         return stockResponseDTO;
     }
 

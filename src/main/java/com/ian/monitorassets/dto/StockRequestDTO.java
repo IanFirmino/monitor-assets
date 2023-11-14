@@ -7,6 +7,7 @@ import lombok.Setter;
 @Setter
 public class StockRequestDTO {
 
-    private String stock;
-    private Double price;
+    private String symbol;
+    private Double iexRealtimePrice;
+
 }
