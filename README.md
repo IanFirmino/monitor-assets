@@ -1,7 +1,5 @@
 ### monitor-assets
 
-This project serves as the backend for the Ideal CTVM Code Challenge. It utilizes the H2 in-memory database. Additionally, a migration script named 'V1__create-table-stock' has been created to streamline the table creation process.
-
 ------------------------------------------------------------------------------
 
 ### Build with
