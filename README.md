@@ -5,7 +5,7 @@
 ### Build with
 - JAVA
 - SpringBoot
-- 
+  
 ### Instalation
 
 1. Obtain a free API key from IEX Cloud.
